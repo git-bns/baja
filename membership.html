@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membership - BAJA</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #c7d2fe, #fde68a);
+}
+
+/* HEADER (SYNCED WITH INDEX EXACTLY) */
+header {
+    background: linear-gradient(90deg, #003366, #0066cc);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* CONTAINER */
+.container {
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* SECTION TITLE */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 🌈 VIBRANT CARDS */
+.card {
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    color: #1f2937;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* GRADIENT VARIANTS */
+.card-blue {
+    background: linear-gradient(135deg, #dbeafe, #93c5fd);
+}
+
+.card-purple {
+    background: linear-gradient(135deg, #ede9fe, #c4b5fd);
+}
+
+.card-yellow {
+    background: linear-gradient(135deg, #fef9c3, #fde68a);
+}
+
+.card-green {
+    background: linear-gradient(135deg, #dcfce7, #86efac);
+}
+
+.card-pink {
+    background: linear-gradient(135deg, #fce7f3, #f9a8d4);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+}
+
+/* FOOTER (SYNCED) */
+footer {
+    background: linear-gradient(90deg, #003366, #0066cc);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>BAJA - Bengali Association of Jacksonville</h2>
+    <nav>
+        <a href="index.html">About Us</a>
+        <a href="events.html">Durga Puja</a>
+        <a href="potluck.html">Potluck</a>
+        <a href="membership.html">Membership</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<h1>Membership & Annual Events</h1>
+
+<!-- EVENTS -->
+<div class="card card-blue">
+<h2>🎉 New Year Celebration (January)</h2>
+<p>Start the year with music, cultural performances, and community dinner bringing families together.</p>
+</div>
+
+<div class="card card-purple">
+<h2>🍲 Adhoc Potluck (Spring)</h2>
+<p>Casual meetups where families bring homemade food, share stories, and enjoy community bonding.</p>
+</div>
+
+<div class="card card-yellow">
+<h2>📚 Saraswati Puja (February)</h2>
+<p>Celebrate knowledge, learning, and arts with traditional rituals and cultural programs for children.</p>
+</div>
+
+<div class="card card-green">
+<h2>🪔 Durga Puja (Fall)</h2>
+<p>The grand annual festival featuring rituals, cultural performances, food stalls, and large gatherings.</p>
+</div>
+
+<div class="card card-pink">
+<h2>🦃 Thanksgiving Gathering (November)</h2>
+<p>A warm cultural blend of gratitude celebration with Bengali food, music, and community dinner.</p>
+</div>
+
+<!-- MEMBERSHIP TIERS -->
+<h2 style="text-align:center; margin-top:40px;">Membership Plans</h2>
+
+<div class="grid">
+
+<div class="card card-blue">
+<h3>Basic Membership</h3>
+<p><b>$10 / year</b></p>
+<p>✔ Access to community events</p>
+<p>✔ Newsletter updates</p>
+</div>
+
+<div class="card card-purple">
+<h3>Family Membership</h3>
+<p><b>$20 / year</b></p>
+<p>✔ Family event access</p>
+<p>✔ Discounted tickets</p>
+<p>✔ Priority seating</p>
+</div>
+
+<div class="card card-green">
+<h3>Premium Membership</h3>
+<p><b>$50 / year</b></p>
+<p>✔ Free major event entry</p>
+<p>✔ VIP seating</p>
+<p>✔ Special recognition</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 BAJA - Bengali Association of Jacksonville</p>
+</footer>
+
+</body>
+</html>
