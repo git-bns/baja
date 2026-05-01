@@ -17,7 +17,7 @@ body {
     background: linear-gradient(135deg, #dbeafe, #c7d2fe, #fde68a);
 }
 
-/* HEADER (SYNCED WITH INDEX EXACTLY) */
+/* HEADER */
 header {
     background: linear-gradient(90deg, #003366, #0066cc);
     color: white;
@@ -25,17 +25,43 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* KEY FIX */
 }
 
+/* NAV */
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* NAV LINKS */
 nav a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 8px;
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h2 {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        justify-content: center;
+    }
 }
 
 /* CONTAINER */
@@ -107,7 +133,7 @@ footer {
 <body>
 
 <header>
-    <h2>BAJA - Bengali Association of Jacksonville</h2>
+    <h2>Bengali Association of Jacksonville (BAJA)</h2>
     <nav>
         <a href="index.html">About Us</a>
         <a href="events.html">Durga Puja</a>
@@ -126,14 +152,16 @@ footer {
 <p>Start the year with music, cultural performances, and community dinner bringing families together.</p>
 </div>
 
+
+
 <div class="card card-purple">
-<h2>🍲 Adhoc Potluck (Spring)</h2>
-<p>Casual meetups where families bring homemade food, share stories, and enjoy community bonding.</p>
+<h2>📚 Saraswati Puja (February)</h2>
+<p>Celebrate knowledge, learning, and arts with traditional rituals and cultural programs for children.</p>
 </div>
 
 <div class="card card-yellow">
-<h2>📚 Saraswati Puja (February)</h2>
-<p>Celebrate knowledge, learning, and arts with traditional rituals and cultural programs for children.</p>
+<h2>🍲 Adhoc Potluck (Spring)</h2>
+<p>Casual meetups where families bring homemade food, share stories, and enjoy community bonding.</p>
 </div>
 
 <div class="card card-green">
@@ -179,7 +207,7 @@ footer {
 </div>
 
 <footer>
-<p>© 2026 BAJA - Bengali Association of Jacksonville</p>
+<p>© 2026 - Bengali Association of Jacksonville (BAJA)</p>
 </footer>
 
 </body>

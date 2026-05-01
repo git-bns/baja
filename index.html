@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BAJA - Bengali Association of Jacksonville</title>
+<title>Bengali Association of Jacksonville (BAJA)</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
 <text x='50' y='70' text-anchor='middle'
@@ -25,17 +25,43 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* KEY FIX */
 }
 
+/* NAV */
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* NAV LINKS */
 nav a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 8px;
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h2 {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        justify-content: center;
+    }
 }
 
 /* HERO */
@@ -89,7 +115,8 @@ nav a:hover {
 }
 
 .card-yellow {
-    background: linear-gradient(135deg, #fef9c3, #fbbf24);
+    background: linear-gradient(135deg, #fff7a8, #facc15, #f59e0b);
+    box-shadow: 0 10px 25px rgba(251, 191, 36, 0.4);
 }
 
 /* PROFILE SECTION */
@@ -137,7 +164,7 @@ footer {
 <body>
 
 <header>
-    <h2>BAJA - Bengali Association of Jacksonville</h2>
+    <h2>Bengali Association of Jacksonville (BAJA)</h2>
     <nav>
 		<a href="index.html">About Us</a>
 		<a href="events.html">Durga Puja</a>
@@ -147,7 +174,7 @@ footer {
 </header>
 
 <section class="hero">
-    <h1>Bengali Association of Jacksonville</h1>
+    <h1>Bengali Association of Jacksonville (BAJA)</h1>
     <p>Celebrating Culture, Community & Tradition</p>
 </section>
 
@@ -173,7 +200,7 @@ contemporary life, fostering unity, inclusiveness, and cultural pride.
 
 <!-- PRESIDENT -->
 <div class="card profile card-purple">
-<img src="Sourav.jpeg" alt="Sourav Pal">
+<img src="sou.jpg" alt="Sourav Pal">
 <div class="profile-text">
 <h3>President – Sourav Pal</h3>
 <p>
@@ -186,7 +213,7 @@ engagement, and meaningful social contributions.”
 
 <!-- SOCIAL MEDIA -->
 <div class="card profile card-pink">
-<img src="Tanima.jpg" alt="Tanima">
+<img src="tani.jpg" alt="Tanima">
 <div class="profile-text">
 <h3>Social Media Lead – Tanima</h3>
 <p>
@@ -198,7 +225,7 @@ We ensure everyone stays informed and involved in our vibrant community activiti
 
 <!-- SECRETARY -->
 <div class="card profile card-green">
-<img src="Ananya.jpg" alt="Ananya">
+<img src="anan.jpg" alt="Ananya">
 <div class="profile-text">
 <h3>Secretary – Ananya</h3>
 <p>
@@ -212,17 +239,22 @@ Our aim is to strengthen relationships and create lasting memories for all membe
 <div class="card card-yellow">
 <h2>Community Highlights</h2>
 <div class="gallery">
-<img src="im1.jpg">
-<img src="im2.jpg">
-<img src="im3.jpg">
-<img src="im4.jpg">
+<img src="img1.jpg">
+<img src="imr2.jpg">
+<img src="img3.jpg">
+<img src="img4.jpg">
+
+<img src="imr4.jpg">
+<img src="imr3.jpg">
+<img src="img2.jpg">
+<img src="imr1.jpg">
 </div>
 </div>
 
 </div>
 
 <footer>
-<p>© 2026 BAJA - Bengali Association of Jacksonville</p>
+<p>© 2026 - Bengali Association of Jacksonville (BAJA)</p>
 </footer>
 
 </body>

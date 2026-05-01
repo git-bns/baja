@@ -25,17 +25,43 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* KEY FIX */
 }
 
+/* NAV */
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* NAV LINKS */
 nav a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 8px;
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h2 {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        justify-content: center;
+    }
 }
 
 /* CONTENT */
@@ -98,6 +124,23 @@ h1 {
     border-radius: 10px;
 }
 
+.date-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.7);
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.date-badge svg {
+    width: 16px;
+    height: 16px;
+}
+
 /* FOOTER */
 footer {
     background: linear-gradient(90deg, #003366, #0066cc);
@@ -112,7 +155,7 @@ footer {
 <body>
 
 <header>
-    <h2>BAJA - Bengali Association of Jacksonville</h2>
+    <h2>Bengali Association of Jacksonville (BAJA)</h2>
     <nav>
 		<a href="index.html">About Us</a>
 		<a href="events.html">Durga Puja</a>
@@ -123,7 +166,7 @@ footer {
 
 <div class="container">
 
-<h1>Sunday Potluck – May 3</h1>
+<h1>Sunday Potluck – <span class="date-badge">📅 May 3</span></h1>
 
 <div class="card">
 <p>
@@ -141,15 +184,15 @@ Bring your favorite dish and share the joy!
 
 <div class="gallery">
 <img src="potluck_menu2.jpeg">
-<img src="chiken.jpg">
+<img src="chicken.jpg">
 <img src="potluk_menu1.jpeg">
-<img src="pinaple.png">
+<img src="fish.jpg">
 </div>
 
 </div>
 
 <footer>
-<p>© 2026 BAJA - Bengali Association of Jacksonville</p>
+<p>© 2026 - Bengali Association of Jacksonville (BAJA)</p>
 </footer>
 
 </body>
